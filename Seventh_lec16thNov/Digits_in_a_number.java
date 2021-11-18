@@ -6,15 +6,13 @@ public class Digits_in_a_number {
 	public static String digits(int x) {
 		String f;
 		int c=0;
-		if(x>=10000) {
-			f="Number is very high";
-		}else {
+		
 		while(x>0) {
 			x=x/10;
 			c++;
 		}
 		f="You have entered a "+c+" digit number";
-		}
+		
 		return f;	
 	}
 	
