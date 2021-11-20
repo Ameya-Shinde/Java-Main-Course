@@ -6,7 +6,7 @@ public class Method_takes_2_prints_relationship {
 
 	static String relation(int x,int y) {
 		String r;
-		r=(x>y)?"a is greater than b":(y>x)?"b is greater than a":"Both are equal";
+		r=(x>y)?"a is greater than b":(y>x)?"b is greater than a":"The numbers are equal";
 		return r;
 	}
 	
