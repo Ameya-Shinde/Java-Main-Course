@@ -1,9 +1,8 @@
-package _Nov17th;
+package _Nov18th;
 
 import java.util.Scanner;
 
-public class Digits_in_number {
-	
+public class Number_of_digits_while_loop {
 	public static String digits(int x) {
 		String f;
 		int c=0;
@@ -13,13 +12,13 @@ public class Digits_in_number {
 			c++;
 		}
 		f="You have entered a "+c+" digit number";
+		
 		return f;	
 	}
 	
 	public static void main(String args[]) {
 	Scanner sc=new Scanner(System.in);
 	char ch;
-	
 	do {
 	System.out.println("Enter your number");
 	int a=sc.nextInt();
@@ -29,7 +28,6 @@ public class Digits_in_number {
 	System.out.println("\nDo you wish to continue?(Yes/No)");
 	 ch=sc.next().charAt(0);
 	 System.out.println();
-	 
 	}while(ch=='y' || ch=='Y');
 	sc.close();
 }
