@@ -16,7 +16,7 @@ public class Person
 	  System.out.println("Please add field details");
    }
 
-   
+   // constructor
    public Person(String theName)
    {
 	  this(theName+"@edu.in","406 558-7725");
