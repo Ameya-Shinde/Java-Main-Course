@@ -1,0 +1,39 @@
+Original code 
+package pack1;
+ 
+class A
+{
+    public A()
+    {
+        //public constructor
+    }
+}
+ 
+package pack2;
+ 
+import pack1.*;
+ 
+class B
+{
+    A a = new A();   	//Compile Time Error
+}
+
+
+
+Modified Code
+
+package pack1;
+public class A {
+	public A()
+    {
+        //public constructor
+    }
+}
+
+package pack2;
+import pack1.*;
+class B {
+		public static void main(String[] args) {
+	    A a = new A();   	//Compile Time Error
+		}
+	}
