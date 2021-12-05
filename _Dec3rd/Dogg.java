@@ -1,14 +1,5 @@
 package _Dec3rd;
 
-class Beagle extends Dogg
-{
-    public void speak()
-    {
-        System.out.println("arf arf");
-    }
-}
-
-
 public class Dogg {
 	public void speak()
     {
@@ -22,5 +13,11 @@ public class Dogg {
         Dogg b = new Beagle();
         b.speak();
     }
-
+}
+class Beagle extends Dogg
+{
+    public void speak()
+    {
+        System.out.println("arf arf");
+    }
 }
